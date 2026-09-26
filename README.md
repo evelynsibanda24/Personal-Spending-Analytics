@@ -23,3 +23,20 @@ The analysis seeks to answer the following questions:
 - Which individual purchases have the greatest impact on total spending?
 - How many transactions occur during the period, and what does this reveal about transaction activity?
 - What broader spending patterns can be identified after separating actual expenditure from transfers and income?
+ 
+
+ ## Data Preparation & Transformation
+
+The bank statement PDF was imported into Power Query, where the extracted data required significant restructuring before analysis.
+
+Key transformation steps included:
+
+- Combined transaction data extracted across multiple PDF pages into a single table.
+- Removed repeated headers and non-transaction rows created during PDF extraction.
+- Standardized column names and assigned appropriate data types.
+- Filled down transaction dates where PDF extraction had separated dates from their corresponding transaction details.
+- Reconstructed fragmented transactions so that each transaction was represented by a single row.
+- Consolidated transaction description fragments into a complete `Transaction Details` field.
+- Extracted transaction time from the transaction descriptions and created a separate `Time` field.
+- Cleaned and validated the Debit, Credit, and Balance fields for analysis.
+- Produced a final structured dataset containing **448 transaction records** with Date, Time, Transaction Details, Debit, Credit, and Balance fields.
