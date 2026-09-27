@@ -40,3 +40,21 @@ Key transformation steps included:
 - Extracted transaction time from the transaction descriptions and created a separate `Time` field.
 - Cleaned and validated the Debit, Credit, and Balance fields for analysis.
 - Produced a final structured dataset containing **448 transaction records** with Date, Time, Transaction Details, Debit, Credit, and Balance fields.
+
+## Transaction Categorization & DAX
+
+After the transaction data was cleaned and structured, DAX was used to create a `Spending Category` calculated column based on keywords found within the 
+transaction descriptions.
+Transactions were classified into meaningful analytical categories including:
+
+- Food & Dining
+- Shopping
+- Transport
+- Hotels
+- Education / Fees
+- Transfers
+- Income
+
+Transfers and income were retained in the underlying dataset but excluded from spending-focused visuals where appropriate. This prevented movements of money 
+between accounts and incoming funds from being interpreted as actual expenditure.
+The categorization transformed unstructured merchant and transaction descriptions into groups that could be used to analyze spending patterns across the dataset.
