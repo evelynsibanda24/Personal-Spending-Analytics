@@ -58,3 +58,18 @@ Transactions were classified into meaningful analytical categories including:
 Transfers and income were retained in the underlying dataset but excluded from spending-focused visuals where appropriate. This prevented movements of money 
 between accounts and incoming funds from being interpreted as actual expenditure.
 The categorization transformed unstructured merchant and transaction descriptions into groups that could be used to analyze spending patterns across the dataset.
+
+## Power BI Dashboard & Analysis
+
+An interactive Power BI dashboard was developed to present the cleaned and categorized transaction data and answer the key analytical questions defined for the project.
+
+The dashboard includes:
+
+- **Total Credits** – summarizes incoming funds during the analyzed period.
+- **Total Debits** – summarizes outgoing transaction amounts.
+- **Total Transactions** – shows the overall volume of transaction activity.
+- **Largest Purchase** – identifies the highest individual purchase after excluding transfers and income.
+- **Spending by Category** – compares expenditure across major spending categories.
+- **Monthly Spending Trend** – shows how actual expenditure changes over time.
+
+Transfers and income were excluded from spending-focused visuals to provide a clearer view of actual expenditure.
