@@ -73,3 +73,11 @@ The dashboard includes:
 - **Monthly Spending Trend** – shows how actual expenditure changes over time.
 
 Transfers and income were excluded from spending-focused visuals to provide a clearer view of actual expenditure.
+
+## Key Findings
+
+- **Food & Dining** was the largest spending category during the analyzed period, followed by **Shopping**.
+- Monthly spending varied considerably, with a clear peak in **April**, followed by a decline in the subsequent months.
+- The largest individual purchase, after excluding transfers and income, was approximately **SAR 6.61K**.
+- The dataset contained **448 transactions**, providing a substantial transaction history for analyzing spending behaviour.
+- Separating transfers and income from expenditure provided a clearer view of actual spending patterns and prevented movements of money from being interpreted as consumption.
